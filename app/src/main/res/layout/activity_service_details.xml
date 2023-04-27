@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/standard_margin_16"
+    android:paddingStart="@dimen/standard_margin_12"
+    android:paddingEnd="@dimen/standard_margin_12"
+    android:background="@drawable/gradient_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/icon_im"
+            android:layout_width="@dimen/view_size_48"
+            android:layout_height="@dimen/view_size_48" />
+
+        <TextView
+            android:id="@+id/name_tv"
+            style="@style/TextAppearance.Type4"
+            android:layout_marginTop="@dimen/standard_margin_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/title_tv"
+            style="@style/TextAppearance.Type4"
+            android:layout_marginTop="@dimen/standard_margin_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/description_tv"
+            style="@style/TextAppearance.Type4"
+            android:layout_marginTop="@dimen/standard_margin_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/city_tv"
+            style="@style/TextAppearance.Type4"
+            android:layout_marginTop="@dimen/standard_margin_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/address_tv"
+            style="@style/TextAppearance.Type4"
+            android:layout_marginTop="@dimen/standard_margin_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/phone_tv"
+            style="@style/TextAppearance.Type4"
+            android:layout_marginTop="@dimen/standard_margin_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/public_email_tv"
+            style="@style/TextAppearance.Type4"
+            android:layout_marginTop="@dimen/standard_margin_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/website_tv"
+            style="@style/TextAppearance.Type4"
+            android:layout_marginTop="@dimen/standard_margin_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/workingHours_tv"
+            style="@style/TextAppearance.Type4"
+            android:layout_marginTop="@dimen/standard_margin_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/rates_tv"
+            style="@style/TextAppearance.Type4"
+            android:layout_marginTop="@dimen/standard_margin_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

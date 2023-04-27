@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CryptoMoto</string>
+    <string name="title_home">Home</string>
+    <string name="title_chat">Chat</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_map">Map</string>
+    <string name="title_menu">Menu</string>
+    <string name="posts">Posts</string>
+    <string name="services">Services</string>
+    <string name="shops">Shops</string>
+    <string name="users">Users</string>
+    <string name="search">Search</string>
+    <string name="under_construction">Under construction. Will be available in the next release</string>
+    <string name="network_not_available">You are not connected to the internet, please check network connection</string>
+</resources>

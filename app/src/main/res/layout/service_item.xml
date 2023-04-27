@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/standard_margin_16"
+    tools:context=".MainActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/icon_im"
+        android:layout_width="@dimen/view_size_48"
+        android:layout_height="@dimen/view_size_48"
+        android:layout_marginStart="@dimen/standard_margin_16"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/name_tv"
+        style="@style/TextAppearance.Type4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/standard_margin_12"
+        app:layout_constraintTop_toTopOf="@+id/icon_im"
+        app:layout_constraintStart_toEndOf="@+id/icon_im"
+        tools:text="Luka Doncic"/>
+
+    <TextView
+        android:id="@+id/descr_tv"
+        style="@style/TextAppearance.Type5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/name_tv"
+        app:layout_constraintStart_toStartOf="@+id/name_tv"
+        tools:text="Repair shop"/>
+
+    <ImageView
+        android:id="@+id/right_iv"
+        android:layout_width="@dimen/view_size_4"
+        android:layout_height="@dimen/view_size_4"
+        android:src="@drawable/ic_right"
+        android:layout_marginStart="@dimen/standard_margin_4"
+        android:layout_marginTop="@dimen/standard_margin_8"
+        app:layout_constraintTop_toBottomOf="@+id/name_tv"
+        app:layout_constraintStart_toEndOf="@+id/descr_tv" />
+
+    <TextView
+        android:id="@+id/location_tv"
+        style="@style/TextAppearance.Type5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/standard_margin_4"
+        app:layout_constraintTop_toBottomOf="@+id/name_tv"
+        app:layout_constraintStart_toEndOf="@+id/right_iv"
+        app:layout_constraintEnd_toStartOf="@+id/rating_view"
+        tools:text="Cadiz, Spain"/>
+
+    <TextView
+        android:id="@+id/rate_tv"
+        style="@style/TextAppearance.Type6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/standard_margin_24"
+        app:layout_constraintTop_toTopOf="@+id/icon_im"
+        app:layout_constraintStart_toStartOf="@id/rating_view"
+        app:layout_constraintEnd_toEndOf="@id/rating_view"
+        tools:text="4.1"/>
+
+    <com.crypto.moto.ui.rating.CustomRatingView
+        android:id="@+id/rating_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rate_tv"
+        android:layout_marginEnd="@dimen/standard_margin_16"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
